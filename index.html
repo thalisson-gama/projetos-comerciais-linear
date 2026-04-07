@@ -58,7 +58,7 @@
        RESET & BASE
     ============================================================ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
     body {
       font-family: var(--font-main);
       font-size: 16px;
@@ -1000,6 +1000,9 @@
       .btn { padding: 14px 28px; font-size: 13px; }
       .mobile-cta { display: block; }
       .whatsapp-float { bottom: 88px; }
+      .carousel-prev { left: 8px; }
+      .carousel-next { right: 8px; }
+      .carousel-wrapper { padding: 0 16px; }
     }
     @media (max-width: 680px) {
       .hero { min-height: auto; padding: 48px 16px 36px; }
@@ -1034,19 +1037,19 @@
         <img src="assets/logo-linear-white.png" alt="Linear - Projetos Comerciais" style="max-width:100%;height:auto;" />
       </div>
 
-      <p class="hero-eyebrow">Projetos Comerciais - Arquitetônicos e Complementares</p>
+      <p class="hero-eyebrow">Projetos e Gerenciamento de Obras Comerciais</p>
 
       <h1 class="hero-headline">
-        Projetos técnicos para sua empresa<br>
-        com <em>solidez</em> e prazo definido.
+        Sua obra comercial <em>sem retrabalho</em>,<br>
+        mais rápida e com prazo fechado.
       </h1>
 
       <p class="hero-subheadline">
-        Projetos arquitetônicos, estruturais, elétricos, hidráulicos e gerenciamento de obra para indústrias, comércios e franquias. Equipe técnica experiente e entrega completa.
+        Cada dia de obra parada é dinheiro perdido com aluguel, equipe ociosa e faturamento adiado. Fazemos o projeto certo para uma execução rápida e gerenciamos a obra para que ela saia do papel no prazo.
       </p>
 
       <div class="hero-buttons" style="flex-direction:column;align-items:center;">
-        <a href="#formulario" class="btn btn-green">Solicitar proposta técnica</a>
+        <a href="#formulario" class="btn btn-green">Quero agilizar minha obra</a>
       </div>
 
       <!-- Prova social -->
@@ -1092,30 +1095,30 @@
   ============================================================ -->
   <section class="timeline fade-in">
     <div class="container">
-      <p class="section-label">Passo a passo</p>
-      <h2 class="section-title">Etapas do seu projeto</h2>
-      <p class="section-subtitle">Cada fase é planejada para que você saiba exatamente o que está acontecendo e quando.</p>
+      <p class="section-label">Do projeto à obra pronta</p>
+      <h2 class="section-title">Como tiramos sua obra do papel</h2>
+      <p class="section-subtitle">Projeto pensado para execução rápida e gerenciamento que garante o cumprimento do cronograma.</p>
 
       <div class="timeline-grid">
         <div class="timeline-card fade-in">
           <div class="timeline-step">1</div>
-          <h3>Briefing e Levantamento</h3>
-          <p>Entendemos a demanda, visitamos o local e alinhamos escopo, prazos e requisitos técnicos do projeto.</p>
+          <h3>Levantamento e Escopo</h3>
+          <p>Visitamos o local, entendemos sua urgência e definimos o caminho mais rápido para o projeto sair do papel.</p>
         </div>
         <div class="timeline-card fade-in" style="transition-delay:0.1s">
           <div class="timeline-step">2</div>
-          <h3>Desenvolvimento</h3>
-          <p>Elaboração dos projetos arquitetônicos e complementares com validações técnicas em cada etapa.</p>
+          <h3>Projeto Otimizado</h3>
+          <p>Projetos arquitetônicos e complementares pensados para execução ágil - menos retrabalho, menos custo, mais velocidade.</p>
         </div>
         <div class="timeline-card fade-in" style="transition-delay:0.2s">
           <div class="timeline-step">3</div>
           <h3>Aprovações e Licenças</h3>
-          <p>Submissão para aprovação na prefeitura, corpo de bombeiros e demais órgãos necessários.</p>
+          <p>Prefeitura, bombeiros, concessionárias - cuidamos de toda a burocracia para que nada trave o início da obra.</p>
         </div>
         <div class="timeline-card fade-in" style="transition-delay:0.3s">
           <div class="timeline-step">4</div>
-          <h3>Entrega e Acompanhamento</h3>
-          <p>Entrega completa dos projetos com ART e, se necessário, gerenciamento da execução em campo.</p>
+          <h3>Gerenciamento da Obra</h3>
+          <p>Acompanhamos a execução em campo para garantir que o projeto seja seguido, o prazo cumprido e o orçamento respeitado.</p>
         </div>
       </div>
     </div>
@@ -1131,31 +1134,31 @@
           <rect x="2" y="3" width="20" height="18" rx="2"/><path d="M2 9h20M9 21V9"/>
         </svg>
       </div>
-      <span class="benefit-label">Entrega completa</span>
-      <p class="benefit-text">Todos os projetos que sua obra precisa, em um único lugar</p>
-      <p class="benefit-desc">Arquitetônico, estrutural, elétrico, hidráulico, SPDA, PPCI e mais. Sem precisar contratar vários profissionais avulsos.</p>
+      <span class="benefit-label">Zero retrabalho</span>
+      <p class="benefit-text">Projeto compatibilizado que vai para a obra sem surpresas</p>
+      <p class="benefit-desc">Projetos desalinhados geram retrabalho, estouro de orçamento e atraso. Compatibilizamos todas as disciplinas antes da obra começar - elétrico, hidráulico, estrutural, PPCI - para que a execução flua sem parar.</p>
     </div>
 
     <div class="benefit-col fade-in" style="transition-delay:0.15s">
       <div class="benefit-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-light)" stroke-width="2" aria-hidden="true">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
         </svg>
       </div>
-      <span class="benefit-label">Solidez técnica</span>
-      <p class="benefit-text">Equipe com mais de uma década de experiência em projetos comerciais</p>
-      <p class="benefit-desc">Profissionais que já projetaram para indústrias, franquias e grandes redes. Consistência na entrega e no padrão técnico.</p>
+      <span class="benefit-label">Obra mais rápida</span>
+      <p class="benefit-text">Enquanto o aluguel corre, sua obra precisa andar</p>
+      <p class="benefit-desc">Sabemos que cada dia de obra é custo. Projetamos pensando em execução ágil e gerenciamos o cronograma para que o prazo seja cumprido - inclusive com turnos noturnos quando necessário.</p>
     </div>
 
     <div class="benefit-col fade-in" style="transition-delay:0.3s">
       <div class="benefit-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="var(--red-light)" stroke-width="2" aria-hidden="true">
-          <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         </svg>
       </div>
-      <span class="benefit-label">Prazo contratual</span>
-      <p class="benefit-text">Cronograma definido em contrato e cumprido sem surpresas</p>
-      <p class="benefit-desc">Cada etapa tem data de entrega. Você planeja a obra com segurança, sem depender de prazos indefinidos.</p>
+      <span class="benefit-label">Profissionais sérios</span>
+      <p class="benefit-text">Chega de contratar e torcer para dar certo</p>
+      <p class="benefit-desc">Você não pode arriscar a obra da sua empresa com profissionais sem experiência. Mais de uma década entregando projetos e gerenciando obras comerciais e industriais com consistência.</p>
     </div>
   </section>
 
@@ -1278,7 +1281,7 @@
 
       <p class="examples-note">* Dados ilustrativos baseados em projetos reais. Escopo, prazo e disciplinas variam conforme a complexidade e localização do projeto.</p>
 
-      <a href="#formulario" class="btn btn-green">Solicitar proposta técnica</a>
+      <a href="#formulario" class="btn btn-green">Quero agilizar minha obra</a>
     </div>
   </section>
 
@@ -1319,8 +1322,8 @@
   ============================================================ -->
   <section class="testimonials fade-in">
     <div class="container">
-      <p class="section-label">Quem já contratou nossos projetos</p>
-      <h2 class="section-title">O que nossos clientes dizem</h2>
+      <p class="section-label">Quem já resolveu com a gente</p>
+      <h2 class="section-title">Resultados reais de quem contratou</h2>
 
       <div class="testimonials-grid">
 
@@ -1329,7 +1332,7 @@
             <h3 class="testimonial-name">Ricardo Mendes</h3>
             <p class="testimonial-role">Diretor de operações - Rede de franquias</p>
             <p class="testimonial-quote">
-              Precisávamos de um escritório que entendesse o padrão da franquia e entregasse tudo no prazo. A Linear fez todos os projetos, aprovou na prefeitura e ainda acompanhou a obra. Não tivemos retrabalho.
+              A carência do ponto ia vencer em 5 meses e a gente precisava da loja pronta. A Linear entregou o projeto em 30 dias, aprovou na prefeitura e gerenciou a obra inteira. Inauguramos no prazo e sem nenhum retrabalho.
             </p>
           </div>
         </article>
@@ -1339,7 +1342,7 @@
             <h3 class="testimonial-name">Patricia Almeida</h3>
             <p class="testimonial-role">Gerente de compras - Indústria metalúrgica</p>
             <p class="testimonial-quote">
-              O que mais nos convenceu foi a consistência. Já fizemos três projetos com eles e o padrão de entrega é sempre o mesmo: completo, no prazo e sem pendência técnica.
+              Na obra anterior contratamos um escritório barato e tivemos 3 meses de atraso por problemas no projeto. Com a Linear não teve surpresa: tudo compatibilizado, obra andou direto e o galpão ficou pronto antes do previsto.
             </p>
           </div>
         </article>
@@ -1354,15 +1357,15 @@
   <section class="security fade-in" aria-label="Confiança técnica">
 
     <div class="security-text">
-      <p class="section-label">Confiança técnica</p>
-      <h2 class="section-title">Projetos com responsabilidade e rastreabilidade</h2>
-      <p class="security-subtitle">Engenheiros Pedro e Marcos respondem pessoalmente por cada projeto entregue.</p>
+      <p class="section-label">Do projeto ao canteiro</p>
+      <h2 class="section-title">Quem projeta, acompanha a obra</h2>
+      <p class="security-subtitle">Engenheiros Pedro e Marcos respondem pessoalmente por cada projeto e obra gerenciada.</p>
       <div class="security-divider"></div>
       <p>
-        ART emitida para cada disciplina, memorial de cálculo e especificações técnicas completas. Tudo documentado para a obra avançar sem dúvidas.
+        Não entregamos só papel. Projetamos pensando na execução e, quando você contrata o gerenciamento, acompanhamos a obra em campo para garantir que tudo saia conforme planejado - sem improvisos, sem retrabalho, sem estouro de prazo.
       </p>
       <p>
-        Relatórios de compatibilização entre disciplinas e revisões ilimitadas dentro do escopo contratado. Você recebe projetos prontos para executar.
+        ART emitida, relatórios de evolução, controle de cronograma e medições. Você acompanha tudo mesmo sem ir ao canteiro e tem a segurança de que a obra está em boas mãos.
       </p>
     </div>
 
@@ -1382,32 +1385,32 @@
   <section class="faq fade-in">
     <div class="container">
       <p class="section-label">Dúvidas frequentes</p>
-      <h2 class="section-title">Perguntas sobre projetos comerciais</h2>
-      <p class="section-subtitle">Respostas para as dúvidas mais comuns de quem precisa de projetos para sua empresa.</p>
+      <h2 class="section-title">Perguntas sobre projetos e gerenciamento</h2>
+      <p class="section-subtitle">Respostas para as dúvidas mais comuns de quem precisa de agilidade e segurança na obra comercial.</p>
 
       <div class="faq-item">
-        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Quais tipos de projeto vocês fazem?</button>
-        <div class="faq-answer"><p>Projetos arquitetônicos, estruturais, elétricos, hidráulicos, sanitários, SPDA, PPCI (bombeiros), luminotécnico e paisagístico. Também fazemos gerenciamento e acompanhamento de obra.</p></div>
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Tenho pressa. Vocês conseguem entregar rápido?</button>
+        <div class="faq-answer"><p>Sim. Entendemos que obra comercial tem urgência - aluguel correndo, carência vencendo, faturamento parado. Projetos completos saem em 30 a 60 dias dependendo do escopo, e o gerenciamento de obra trabalha com cronograma agressivo, incluindo turnos noturnos quando necessário.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Qual a diferença entre contratar só o projeto e contratar com gerenciamento?</button>
+        <div class="faq-answer"><p>O projeto define o que será construído. O gerenciamento garante que seja construído direito, no prazo e no custo. Quem contrata só o projeto precisa de alguém de confiança para executar. Quem contrata com gerenciamento tem a Linear no canteiro cuidando de tudo - cronograma, qualidade, fornecedores e prestação de contas.</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Vocês atendem franquias que já têm projeto padrão?</button>
-        <div class="faq-answer"><p>Sim. Muitas franquias chegam com o projeto arquitetônico definido pela rede e precisam dos complementares e da aprovação local. Fazemos a adaptação técnica e cuidamos de toda a burocracia.</p></div>
+        <div class="faq-answer"><p>Sim. Muitas franquias chegam com o projeto arquitetônico definido pela rede e precisam dos complementares, da aprovação local e do gerenciamento da obra. Fazemos a adaptação técnica, cuidamos da burocracia e acompanhamos a execução.</p></div>
       </div>
 
       <div class="faq-item">
-        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Qual o prazo médio de entrega dos projetos?</button>
-        <div class="faq-answer"><p>Depende do escopo. Projetos completos para obras comerciais costumam levar de 30 a 60 dias. O prazo é definido em contrato antes do início.</p></div>
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Já tive problemas com profissionais que não entregaram. Como sei que com vocês será diferente?</button>
+        <div class="faq-answer"><p>Prazo em contrato, cronograma detalhado e ART emitida. Mais de 150 projetos entregues com o mesmo padrão. Não trabalhamos com promessas - trabalhamos com documentação, controle e responsabilidade técnica registrada no CREA.</p></div>
       </div>
 
       <div class="faq-item">
-        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Vocês cuidam da aprovação na prefeitura?</button>
-        <div class="faq-answer"><p>Sim. Aprovação na prefeitura, corpo de bombeiros, concessionárias de energia e água. Toda a parte burocrática fica por nossa conta.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Preciso contratar o gerenciamento junto?</button>
-        <div class="faq-answer"><p>Não é obrigatório. O gerenciamento é um serviço adicional para quem quer acompanhamento técnico durante a execução da obra. Muitos clientes contratam apenas os projetos.</p></div>
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Vocês cuidam de toda a parte burocrática?</button>
+        <div class="faq-answer"><p>Sim. Aprovação na prefeitura, corpo de bombeiros, concessionárias de energia e água, alvará de construção. Toda a burocracia fica por nossa conta para que nada trave o início da sua obra.</p></div>
       </div>
     </div>
   </section>
@@ -1481,13 +1484,13 @@
           </div>
 
           <div class="form-group">
-            <label for="disciplinas">Disciplinas necessárias *</label>
+            <label for="disciplinas">O que você precisa? *</label>
             <select id="disciplinas" name="disciplinas" required>
               <option value="" disabled selected>Selecione uma opção</option>
-              <option value="apenas_arquitetonico">Apenas arquitetônico</option>
-              <option value="arquitetonico_complementares">Arquitetônico + complementares</option>
-              <option value="complementares_apenas">Complementares apenas</option>
-              <option value="nao_sei">Não sei ainda</option>
+              <option value="projeto_completo">Projeto completo (arquitetônico + complementares)</option>
+              <option value="projeto_gerenciamento">Projeto + gerenciamento de obra</option>
+              <option value="apenas_gerenciamento">Apenas gerenciamento (já tenho projeto)</option>
+              <option value="nao_sei">Não sei ainda - quero orientação</option>
             </select>
             <span class="error-msg" id="disciplinasError">Por favor, selecione uma opção.</span>
           </div>
@@ -1512,7 +1515,7 @@
 
           <div class="form-actions">
             <button type="button" class="btn btn-back" onclick="prevStep()">&#8592; Voltar</button>
-            <button type="button" class="btn btn-green" onclick="submitForm()">Solicitar proposta &#8594;</button>
+            <button type="button" class="btn btn-green" onclick="submitForm()">Quero agilizar minha obra &#8594;</button>
           </div>
         </div>
 
@@ -1894,7 +1897,7 @@
 
   <!-- CTA Fixo Mobile -->
   <div class="mobile-cta" id="mobileCta">
-    <a href="#formulario" class="btn btn-green">Solicitar proposta técnica</a>
+    <a href="#formulario" class="btn btn-green">Quero agilizar minha obra</a>
   </div>
 
 </body>
